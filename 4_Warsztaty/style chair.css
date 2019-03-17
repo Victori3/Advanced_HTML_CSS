@@ -1,0 +1,752 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('fonty/raleway-bold.woff2') format('woff2'),
+    url('fonty/raleway-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('fonty/raleway-light.woff2') format('woff2'),
+    url('fonty/raleway-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('fonty/raleway-regular.woff2') format('woff2'),
+    url('fonty/raleway-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    /* top prawo dół lewo */
+    /* jeżeli lewo i prawo wynosi auto to będzie na środku */
+    margin: 0 auto;
+    width: 1000px;
+
+
+}
+
+
+
+/*HEADER*/
+
+
+header{
+    width: 100%;
+}
+
+/*rodzic flex */
+.header{
+    display: flex;
+    min-height: 41px;
+    /* Pobierz rozmiar czcionki z roota i wylicz wielkość */
+    font-size: 16px;
+    background: black;
+    padding: 0 20px;
+
+
+}
+
+.logo{
+    width: 70%;
+    /* Ustaw tylko mnie na środku osi pionowej */
+    align-self: center;
+    margin-left: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'ralewayregular';
+}
+
+/* Jest to dziecko rodzica flex */
+/* Jest równiez rodzicem flex ze swoimi dziećmi */
+nav{
+    /* Pobierz jedną część szerokości i przydziel ją mi */
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+a{
+    /* Usuwamy podkreślenie z linku */
+    text-decoration: none;
+    /* Zmieniamy kolor linku */
+    color: white;
+    text-transform: uppercase;
+    margin: 5px;
+    font-family: 'ralewayregular';
+}
+
+/* Zmiana koloru po najechaniu na link */
+/* Zmiana kursoru po najechaniu na link */
+a:hover{
+    color: #27C7AB;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*SEKCJA 1*/
+
+/*rodzic flex */
+.section-one {
+    margin:auto;
+
+    justify-content: space-between; /* w rodzicu piszemy o tym jak maja byc podzielone jego elementy flex*/
+    display:flex;
+    background-image: linear-gradient(#F9F9F9,#D1D0D8);
+}
+
+.row .section-one .img {
+    background-image: url("images/black_chair.png");
+    flex:1;
+    height: 350px;
+    background-position: center;
+}
+
+.row .section-one .text {
+    width: 60%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.section-one h1 {
+    text-transform: uppercase;
+    font-family: 'ralewayregular';
+}
+
+.section-one p {
+    font-family: 'ralewayregular';
+    font-size: 14px;
+    padding: 0 40px;
+}
+
+button {
+    background-color: #27C7AB;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'ralewayregular';
+    height: 50px;
+    width: 290px;
+}
+
+
+
+
+/*SEKCJA 2*/
+
+
+.section-two {
+    margin:auto;
+    min-height: 200px;
+    justify-content: space-between;
+    display:flex;
+    padding: 20px;
+
+}
+
+.row .section-two .img1 {
+    background-image: url("images/box1_img.jpg");
+    flex:1;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.the-background {
+    width: 265px;
+    height: 55px;
+    background-color: rgba(255,255,255,0.3);
+    position: absolute;
+    bottom: 30px;
+}
+
+.the-title p{
+    font-family: 'ralewaybold';
+    font-size: 15px;
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
+}
+
+.the-underline{
+    content: '';
+    width: 130px;
+    height: 6px;
+    background: #27C7AB;
+    bottom: 53px;
+    left: 15px;
+    position: absolute;
+}
+
+.row .section-two .img2 {
+    background-image: url("images/box2_img.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: contain ;
+    background-repeat: no-repeat;
+    flex:1;
+    margin: 20px;
+    position: relative;
+}
+
+.section-two .texttable {
+    border: 1px solid #A9A9A9;
+
+}
+
+.section-two .texttable {
+    text-align: justify;
+    width: 150px;
+    margin: 20px;
+    flex:1;
+    padding: 20px;
+}
+
+h4 {
+    font-family: 'ralewaybold';
+    font-size: 14px;
+    position: relative;
+
+}
+
+h4:after {
+    content: '';
+    width: 130px;
+    height: 5px;
+    background: #27C7AB;
+    top: 20px;
+    left: 0;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+.description p {
+    font-family: 'ralewayregular';
+    font-size: 13px;
+    color: #A9A9A9;
+}
+
+.container div h3 {
+    margin-left: 20px;
+    align-self: center;
+    color: black;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.underline {
+    position: relative;
+
+}
+
+.underline h3 {
+    font-family: 'ralewayregular';
+}
+
+.first {
+    background: #F1F1F1;
+}
+
+ /*element : linia*/
+
+ .underline:after {
+     content: '';
+     width: 280px;
+     height: 6px;
+     background: #27C7AB;
+     top: 45px;
+     left: 40px;
+     position: absolute;
+ }
+
+
+
+/*SEKCJA 3*/
+
+
+.section-three {
+    margin: auto;
+    min-height: 500px;
+    justify-content: space-around;
+    display: flex;
+    background: #F1F1F1;
+    align-items: center;
+    position: relative;
+    font-family: 'ralewaylight';
+    padding: 20px;
+}
+
+
+.row .section-three .box1 {
+    flex:1;
+    height: 400px;
+    margin: 20px;
+    background: #F9F9F9;
+    box-sizing: border-box;
+    border: 2px solid #C1C1C1;
+
+}
+ .box1 .sticker1 {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    position: absolute;
+    top: 30px;
+    left: 160px;
+     background-color: white;
+     border: 1px solid grey;
+}
+
+.box1 .sticker2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    position: absolute;
+    top: 37px;
+    left: 167px;
+    background-color: darkgrey;
+}
+
+.box1 h2 {
+    height: 30px;
+    text-transform: uppercase;
+    margin: 15px 70px;
+    color: #27C6A8;
+    font-size: 20px;
+    padding-left: 20px;
+    font-family: 'ralewaylight';
+}
+
+sub {
+    font-family: 'ralewaylight';
+}
+
+.box1 .circle {
+    margin: 13px 80px 13px 80px;
+    align-items: center;
+
+}
+
+.box1 span {
+    font-size: 40px;
+    color: #c1c1c1;
+    position: relative;
+    margin-right: 15px;
+    font-family: 'ralewaylight';
+}
+
+.box1 h3 {
+    height: 100px;
+    width: 100px;
+    font-size: 18px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    border: 2px solid darkgrey;
+    padding-top: 15px;
+    position: relative;
+    font-family: 'ralewaylight';
+}
+.box1 h3:after {
+    content: "PLN/MSC";
+    display: block;
+    color: #c1c1c1;
+    font-size: 13px;
+    position: absolute;
+    top: 56px;
+    left: 18px;
+    font-family: 'ralewaylight';
+}
+
+.offer .line1,.line2,.line3,.line4{
+    text-align: center;
+    font-size: 22px;
+    padding: 5px;
+    font-family: 'ralewaylight';
+}
+
+.medium {
+    background: #F1F1F1;
+}
+.dark {
+    background: #E4E4E4;
+}
+.light {
+    background: #FFFFFF;
+}
+
+.offer {
+    margin: 20px 0 0 0;
+}
+
+.push-it {
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 100px;
+}
+.middle {
+    background: #FFFFFF;
+    color: #27C7AB;
+}
+
+.row .section-three .box2 {
+    flex:1;
+    height: 400px;
+    margin: 20px;
+    background: #27C7AB;
+    border: 2px solid #27C7AB;
+}
+
+.box2 .sticker1 {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    position: absolute;
+    top: 30px;
+    left: 485px;
+    background-color: #27C7AB;
+
+}
+
+
+.box2 .sticker2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    position: absolute;
+    top: 37px;
+    left: 493px;
+    background-color: white;
+}
+
+.box2 h2 {
+    height: 30px;
+    text-transform: uppercase;
+    margin: 15px 43px;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    font-family: 'ralewaylight';
+}
+
+.box2 .circle {
+    margin: 13px 80px 13px 80px;
+    align-items: center;
+
+}
+
+
+.box2 h3 {
+    height: 100px;
+    width: 100px;
+    font-size: 18px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #c1c1c1;
+    padding-top: 20px;
+    position: relative;
+    font-family: 'ralewaylight';
+}
+
+.box2 span {
+    font-size: 40px;
+    color: #c1c1c1;
+    margin-right: 20px;
+    position: relative;
+    font-family: 'ralewaylight';
+
+}
+.box2 h3:after {
+    content: "PLN/MSC";
+    display: block;
+    color: #c1c1c1;
+    font-size: 13px;
+    position: absolute;
+    top: 52px;
+    left: 18px;
+    font-family: 'ralewaylight';
+}
+
+
+.row .section-three .box3 {
+     flex:1;
+     height: 400px;
+     margin: 20px;
+     background: #F9F9F9;
+     border: 2px solid #C1C1C1;
+ }
+
+.box3 .sticker1 {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    position: absolute;
+    top: 30px;
+    left: 812px;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.box3 .sticker2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    position: absolute;
+    top: 37px;
+    left: 819px;
+    background-color: darkgrey;
+}
+.box3 h2 {
+    height: 30px;
+    text-transform: uppercase;
+    margin: 15px 50px;
+    color: #27C6A8;
+    font-size: 20px;
+    padding-left: 20px;
+    font-family: 'ralewaylight';
+
+}
+.box3 .circle {
+    margin: 13px 80px 13px 80px;
+    align-items: center;
+}
+
+.box3 span {
+    font-size: 32px;
+    color: #c1c1c1;
+    position: relative;
+    margin-right: 15px;
+    font-family: 'ralewaylight';
+}
+.box3 h3 {
+    height: 100px;
+    width: 100px;
+    font-size: 18px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    border: 2px solid darkgrey;
+    color: #c1c1c1;
+    padding-top: 20px;
+    position: relative;
+    font-family: 'ralewaylight';
+}
+
+.box3 h3:after {
+    content: "PLN/MSC";
+    display: block;
+    color: #c1c1c1;
+    font-size: 13px;
+    position: absolute;
+    top: 52px;
+    left: 18px;
+    font-family: 'ralewaylight';
+}
+
+sup {
+    color: #c1c1c1;
+    position: absolute;
+    top: 5px;
+    left: 65px;
+    font-family: 'ralewaylight';
+}
+
+
+
+/*SEKCJA 4*/
+
+
+/*rodzic flex*/
+.section-four {
+    margin: auto;
+    height: 400px;
+    justify-content: space-between;
+    display: flex;
+    background: white;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+/*dziecko flexa*/
+.section-four .box1 {
+    width: 650px;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+form {
+    padding: 20px;
+
+}
+input[type], textarea {
+    width: 580px;
+    padding: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: block;
+    color: #C4C4C4;
+    border: 1px solid #27C7AB;
+    font-family: 'ralewaylight';
+    font-size: 25px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
+    color: #C4C4C4;
+}
+
+
+/*dziecko flexa*/
+.section-four .box2 {
+    width: 550px;
+    height: 400px;
+
+}
+
+.row .section-four .box2 .picture {
+    background-image: url("images/red_chair.png");
+    height: 170px;
+    width: 230px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 30px 50px;
+}
+
+.row .section-four .box2 .checkbox{
+    height: 50px;
+    width: 300px;
+}
+
+.row .section-four .box2 .checkbox .icon {
+    background-image: url("images/form_ok.jpg");
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    margin: 0 30px;
+    border-radius: 3px;
+    border: 1px solid aqua;
+    float: left;
+    position: relative;
+}
+
+.row .section-four .box2 .checkbox .quote p {
+    height: 200px;
+    width: 230px;
+    float: left;
+    position: absolute;
+    display:inline-block;
+    font-size: 16px;
+    font-family: 'ralewaylight';
+    color: #C4C4C4;
+
+}
+
+
+.section-four .box2 .picture {
+    background-image: url("images/red_chair.png");
+    height: 150px;
+    width: 150px;
+}
+
+.section-four .box2 .button {
+    height: 50px;
+    width: 290px;
+    font-size: 27px;
+    padding-left: 20px;
+    font-family: 'ralewayregular';
+
+}
+
+    /*FOOTER*/
+/*rodzic flex*/
+.footer {
+    background: white;
+    display: flex;
+    min-height: 50px;
+    margin:auto;
+    padding: 40px;
+    justify-content: space-around; /* w rodzicu piszemy o tym jak maja byc podzielone jego elementy flex*/
+}
+/*dziecko flexa*/
+.info {
+    width: 65%;
+}
+
+.info p {
+    font-family: 'ralewayregular';
+    color: #C4C4C4;
+    line-height: 39px;
+    font-size: 15px;
+}
+
+/*dziecko flexa i rodzic dla sources i logo-grey*/
+.contact {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sources{
+    flex:1;
+
+}
+
+.logo-grey {
+    font-family: 'ralewayregular';
+    color: #9D9D9D;
+    font-size: 16px;
+    text-transform: uppercase;
+    flex:1;
+    margin:0;
+
+}
+.logo-grey p {
+    text-align: center;
+    line-height: 39px;
+}

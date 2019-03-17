@@ -1,0 +1,45 @@
+.container{
+    margin-left: auto;
+    margin-right:  auto;
+    margin-top: 60px;
+    height: 300px;
+    max-width: 900px;
+    border: 10px solid black;
+    display: flex;
+    border-radius: 5px;
+}
+
+.image{
+    background: white;
+    flex:1;
+}
+
+img{
+    width: 250px;
+    height: 300px;
+}
+
+.textcontainer{
+    background: blue;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    height: 60%;
+    background: lightcyan;
+    text-align: justify;
+    padding: 30px;
+}
+.button{
+    flex:1;
+    background: red;
+}
+
+button {
+    margin-right: 70%;
+    height: 30px;
+    width: 150px;
+
+}

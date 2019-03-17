@@ -1,3 +1,46 @@
 body {
     font-family: 'Arial', sans-serif;
 }
+
+* {
+margin=0;
+padding=0;
+}
+
+.wrapper {
+    background-color: #003343;
+}
+
+.wrapper li {   /*Hierarchia ważności: klasa - 1, element - 1*/
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    color: white;
+}
+
+li.home, li.about, li.pt, li.contact {  /*Hierarchia ważności: aby te wartości były w priorytecie należy dopisać do klas znaczniki */
+    width: 150px;
+    height: 150px;
+    line-height: 250px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+.home {
+    background-color: #3D8EB9;
+}
+
+.about {
+    background-color: #71BA51;
+}
+
+.pt {
+    background-color: #FEC606;
+}
+
+.contact {
+    background-color: #E75926;
+}

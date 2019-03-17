@@ -1,0 +1,40 @@
+/* Zadanie 1 */
+.jeden {
+    font-size: 20px;
+}
+
+.dwa {
+    font-size: 10px;
+}
+
+
+/*Zadanie 2*/
+
+ .yellow {
+    background-color: yellow;
+}
+
+/*Zadanie 3*/
+
+#identyfikator {       /*Id jest najważniejszy w hierarchii, więc kolor red*/
+    background-color: red;
+}
+
+div {
+    background-color: blue;
+}
+
+.klasa {
+    background-color: green;
+}
+
+/*Zadanie 4*/
+
+.jeden {
+    font-size: 20px;
+    font-size: 12px; !important
+}
+
+.dwa {
+    font-size: 10px;
+}

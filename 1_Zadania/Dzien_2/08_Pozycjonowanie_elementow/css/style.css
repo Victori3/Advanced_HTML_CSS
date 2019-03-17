@@ -1,0 +1,53 @@
+div.image {
+    float:left;
+}
+
+.image {
+    height:100px;
+    width: 100px;
+    background-image: url("../images/jez.jpg");
+    border-radius: 100%;
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+}
+
+.text {
+border: 1px solid blue;
+    padding: 30px;
+    margin: 30px;
+position: relative;
+    text-align:justify;
+}
+
+
+.image2 {
+    height:100px;
+    width:100px;
+    background-image: url("../images/jez.jpg");
+    border-radius: 100%;
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    top: 20px;
+    z-index: 3;
+
+}
+.image3 {
+    height:100px;
+    width:100px;
+    background-image: url("../images/jez.jpg");
+    border-radius: 100%;
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+
+
+}
+
+.pic {
+    height: 300px;
+    position: relative;
+}

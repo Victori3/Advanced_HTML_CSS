@@ -1,0 +1,25 @@
+/*.awesome{
+    background-image: linear-gradient(to right, red, pink, yellow, green, blue, violet);
+    height: 500px;
+    width: 300px;
+    font-size: 15px;
+}
+
+.inside{
+    height: 50%;
+    width: 50%;
+    background: grey;
+    font-size: 2em; /*czcionka 15*2 */
+
+
+.awesome{
+    background-image: linear-gradient(to right, red, pink, yellow, green, blue, violet);
+    height: 300px;
+    width: 300px;
+    font-size: 15px;
+}
+.inside{
+    height: 50%;
+    width: 50%;
+    background: grey;
+    font-size: 2em; /*czcionka 15*2 */

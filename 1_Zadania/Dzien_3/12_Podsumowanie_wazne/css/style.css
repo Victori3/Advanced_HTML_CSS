@@ -1,0 +1,139 @@
+/*  Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+}
+
+.container{
+    /* top prawo dół lewo */
+    /* jeżeli lewo i prawo wynosi auto to będzie na środku */
+    margin: 15px auto 15px auto;
+    width: 1000px;
+    border: 1px solid black;
+}
+
+.header{
+    display: flex;
+    min-height: 100px;
+    /* Pobierz rozmiar czcionki z roota i wylicz wielkość */
+    font-size: 2rem;
+}
+
+
+/* Jest to dziecko rodzica flex */
+.logo{
+    width: 70%;
+    /* Ustaw tylko mnie na środku osi pionowej */
+    align-self: center;
+}
+
+/* Jest to dziecko rodzica flex */
+/* Jest równiez rodzicem flex ze swoimi dziećmi */
+nav{
+    /* Pobierz jedną część szerokości i przydziel ją mi */
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    /* Usuwamy podkreślenie z linku */
+    text-decoration: none;
+    /* Zmieniamy kolor linku */
+    color: grey;
+}
+
+/* Zmiana koloru po najechaniu na link */
+/* Zmiana kursoru po najechaniu na link */
+a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/*  Wybierz pierwszy element typu section */
+/*  Ustaw minimalną wysokość */
+section:first-of-type{
+    min-height: 350px;
+}
+
+/* Jest to rodzic flexbox a zarazem sam jest dzieckiem flex */
+.section-one{
+    display: flex;
+    /* Weź 1 część z dostępnej szerokości */
+    flex:1;
+}
+
+/* Wybierz wszyskie dzieci `div` z rodzica o klasie .section-one */
+.section-one > div{
+    min-height: 350px;
+    max-height: 380px;
+    background-color: blue;
+    /* Rodzic jest flex a dziecko przyjmuje jedną część dostepnej szerokości */
+    flex:1;
+}
+
+/* Znajdź elementy dzieci z klasa .img w rodzicu z klasą .section-one */
+.section-one .img{
+    background-color: yellow;
+}
+
+/* Znajdź element który posiada obydwie klasy */
+.container.row{
+    min-height: 500px;
+    display: flex;
+    /* Ustawiamy elementy na środku w osi pionowe */
+    align-items: center;
+}
+
+/* Pełna szerokość baner kolor czarny */
+.full-width{
+    min-height: 350px;
+    max-height: 380px;
+    background: black;
+}
+
+.box{
+    background: white;
+    height: 300px;
+    /* Weź 30% dostępnej szerokości z rodzica */
+    width: 30%;
+}
+
+
+.photo-box{
+    display: flex;
+    /* Rodzic flex ustawia dzieci z przerwami pomiędzy  */
+    justify-content: space-between;
+    /* Rodzic flex ustawia dzieci na środku osi pionowej  */
+    align-items: center;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-item{
+    height: 30px;
+}
+
+.img{
+    /* Pobierz obrazek z zewnętrznego źródła */
+    background-image: url('https://picsum.photos/200/300');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text{
+    padding:10px;
+}

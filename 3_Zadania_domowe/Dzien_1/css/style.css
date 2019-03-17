@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'robotobold';
+    src: url('../css/bold/roboto-bold.woff2') format('woff2'),
+    url('../css/bold/roboto-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('../css/light/roboto-light.woff2') format('woff2'),
+    url('../css/light/roboto-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal ;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../css/regular/roboto-regular.woff2') format('woff2'),
+    url('../css/regular/roboto-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#all_lists {
+    height: 500px;
+    width: 300px;
+}
+
+ul >li {
+    list-style-type: none;
+}
+
+li{
+    height: 50px;
+    width: 300px;
+    line-height: 50px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.large_list {
+    background-color: #FF00A5;
+    font-weight: 400;
+    font-family: 'robotobold';
+
+}
+
+.large_list li {
+    background-color: #36FF74;
+}
+
+#all_lists > ul {
+    background-color: #E8370E;
+    font-weight: 700;
+    font-family: 'robotolight';
+}
+
+#all_lists > ul > li {
+    background-color: #365FFF;
+}
+
+#all_lists ul ul {
+    background-color: #FFEC0C;
+    font-weight: 300;
+    font-family: 'robotoregular';
+}
+
+#all_lists ul ul li {
+    background-color: #0DFFDE;
+}
